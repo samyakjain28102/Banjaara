@@ -1,10 +1,13 @@
 import "./signIn.css";
 import "./signUp.css";
+import { Link } from "react-router-dom";
 function SignUp() {
   return (
     <div className="signin_page">
       <div className="box1">
-        <p className="form_heading">Create a new account</p>
+        <p className="form_heading justify-content-center">
+          Create a new account
+        </p>
         <form className="form">
           <input
             type="url"
@@ -43,7 +46,11 @@ function SignUp() {
             rows={13}
             className="exptxt"
           ></textarea>
-          <input type="submit" name="Submit" className="submitbutton" />
+          <Link to="/pages/profile"> <input
+            type="submit"
+            name="Submit"
+            className="submitbutton"
+          /></Link>
         </form>
         <br></br>
       </div>

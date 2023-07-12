@@ -5,6 +5,8 @@ import Explore from "./pages/Explore";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Profile from "./pages/Profile";
+import Blogs from "./pages/Blogs";
+
 function App() {
   return (
     <>
@@ -16,6 +18,7 @@ function App() {
           <Route path="/pages/SignIn" element={<SignIn />} />
           <Route path="/pages/SignUp" element={<SignUp />} />
           <Route path="/pages/Profile" element={<Profile />} />
+          <Route path="/pages/Blogs" element={<Blogs />} />
         </Routes>
       </Router>
     </>
